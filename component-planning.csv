@@ -1,0 +1,10 @@
+Category,Planning quantity,Specification to confirm,Document role
+Arduino-compatible controller,1,Board model and voltage,Arduino control platform
+Inertial sensor,1,MPU6050 interface and sample rate,MPU6050 sensing platform
+Motor,1,Torque speed current and shaft dimensions,Reference planning item
+Motor driver,1,Compatibility current rating and control mode,Motor-interface planning
+Reaction wheel,1,Mass dimensions inertia and balance,Conceptual geometry planning
+Frame and base,1 set,Material geometry tolerances and mounting,Mechanical packaging planning
+Shaft hub and bearings,As required,Interface fit and load capacity,Reference planning item
+Power supply,1,Voltage current and protection,Reference planning item
+Wiring and fasteners,As required,Gauge connectors and sizes,Reference planning item

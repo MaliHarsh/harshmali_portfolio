@@ -19,5 +19,5 @@
  ['pointerup','pointercancel'].forEach(type=>canvas.addEventListener(type,()=>drag=null));
  canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.65,Math.min(1.7,zoom-e.deltaY*.001));draw()},{passive:false});
  new ResizeObserver(draw).observe(canvas);
- fetch('reaction-wheel-reference-mesh.json').then(r=>{if(!r.ok)throw Error('Model unavailable');return r.json()}).then(m=>{mesh=m;draw()}).catch(()=>{canvas.outerHTML='<p>Interactive preview unavailable. The CAD drawing and downloadable files are available below.</p>'});
+ fetch('assets/reaction-wheel/reaction-wheel-reference-mesh.json').then(r=>{if(!r.ok)throw Error('Model unavailable');return r.json()}).then(m=>{mesh=m;draw()}).catch(()=>{canvas.outerHTML='<p>Interactive preview unavailable. The CAD drawing and downloadable files are available below.</p>'});
 })();
